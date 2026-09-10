@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SegnaPadel — L'app che tiene il punteggio, lo annuncia e ti fa segnare dal polso</title>
-<meta name="description" content="Appendi il telefono alla rete e gioca. SegnaPadel tiene il punteggio, te lo annuncia a voce e ti fa segnare i punti dal polso, senza mai fermare lo scambio.">
+<title>PadelCue — L'app che tiene il punteggio, lo annuncia e ti fa segnare senza fermarti</title>
+<meta name="description" content="Appendi il telefono alla rete e gioca. PadelCue tiene il punteggio, te lo annuncia a voce e ti fa segnare i punti da un telecomando, senza mai fermare lo scambio. Gratis, senza pubblicità.">
 <link rel="icon" href="../../icons/icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@
   .feat:hover .ic{transform:rotate(-8deg) scale(1.1)}
   @media(max-width:820px){.feats{grid-template-columns:1fr}}
 
-  /* premium showcase */
+  /* pro showcase */
   .pcard{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.13)}
   .pcard:last-child{border-bottom:0}
   .pcard .n{font-family:"Roboto Condensed";font-weight:900;font-size:2.6rem;color:var(--signal);line-height:1;opacity:.5}
@@ -95,6 +95,7 @@
   .split li::before{content:"\2713";position:absolute;left:0;font-weight:900;color:var(--green)}
   .sec-ink .split li::before{color:var(--signal)}
   @media(max-width:900px){.split{grid-template-columns:1fr;gap:28px}.split.rev .txt{order:0}}
+  .split--noimg{grid-template-columns:1fr;max-width:44em}
 
   .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
   .shot{padding:0;border:0;background:none;cursor:pointer;border-radius:12px;overflow:hidden;position:relative;display:block}
@@ -170,11 +171,11 @@
   <div class="wrap">
     <a class="logo" href="#top">
       <svg viewBox="0 0 1024 1024" aria-hidden="true"><rect width="1024" height="1024" fill="#062017"/><circle cx="512" cy="524" r="338" fill="#EAFF3D"/><path d="M 262 470 C 404 372 470 706 560 726 C 644 744 726 700 766 646" fill="none" stroke="#062017" stroke-width="42" stroke-linecap="round"/></svg>
-      Segna<b>Padel</b>
+      Padel<b>Cue</b>
     </a>
     <nav>
-      <a href="#gratis">L'app</a>
-      <a href="#premium">Premium</a>
+      <a href="#gratis">L'app gratis</a>
+      <a href="#pro">Pro</a>
       <a href="#kit">Kit da Campo</a>
       <a class="nav-cta" href="#kit">Kit 49,90&nbsp;&euro;</a>
     </nav>
@@ -186,14 +187,14 @@
   <div class="wrap">
     <div>
       <h1>Gioca. Al punteggio <span class="hl">ci pensa lui</span>.</h1>
-      <p class="lead">Appendi il telefono alla rete e inizia. SegnaPadel tiene il punteggio, <strong>te lo annuncia a voce</strong> e ti fa <strong>segnare i punti dal polso</strong> &mdash; senza mai fermare lo scambio per contare o litigare sul risultato.</p>
+      <p class="lead">Appendi il telefono alla rete e inizia. PadelCue tiene il punteggio, <strong>te lo annuncia a voce</strong> e ti fa <strong>segnare da un telecomando</strong> &mdash; senza mai fermare lo scambio per contare o litigare sul risultato. Gratis, senza pubblicit&agrave;.</p>
       <div class="cta-row">
-        <a class="btn" href="#premium">Scopri cosa fa</a>
-        <span class="badge-soon">App &mdash; in arrivo su Google Play</span>
+        <a class="btn" href="#gratis">Scopri cosa fa</a>
+        <span class="badge-soon">App &mdash; su Google Play</span>
       </div>
     </div>
     <div class="hero-img">
-      <img src="img/supporto-campo.jpg" alt="Telefono con l'app SegnaPadel montato sul supporto agganciato alla rete metallica del campo da padel">
+      <img src="img/supporto-campo.jpg" alt="Telefono con l'app PadelCue montato sul supporto agganciato alla rete metallica del campo da padel">
     </div>
   </div>
 </section>
@@ -201,58 +202,73 @@
 <section class="sec-paper" id="gratis">
   <div class="wrap">
     <div class="eyebrow reveal">Gratis, per tutti</div>
-    <h2 class="reveal d1">La base: un tabellone serio, sul campo</h2>
-    <p class="sec-lead reveal d2">L'app &egrave; <strong>gratuita e senza pubblicit&agrave;</strong>. Tocchi la tua met&agrave; campo per segnare il punto, doppio tocco per annullare. Grande, leggibile da lontano, la partita riprende da dove l'hai lasciata. Perfetta appesa alla rete o al vetro.</p>
+    <h2 class="reveal d1">Tutto il necessario per giocare &egrave; gratis</h2>
+    <p class="sec-lead reveal d2">L'app &egrave; <strong>gratuita e senza pubblicit&agrave;</strong>. Tocchi la tua met&agrave; campo per segnare, doppio tocco per annullare. Grande, leggibile da lontano, la partita riprende da dove l'hai lasciata. <strong>Voce e telecomando Bluetooth inclusi</strong>, senza pagare nulla.</p>
     <div class="feats">
       <div class="feat reveal">
-        <div class="ic">15</div>
-        <h3>Regole complete del padel</h3>
-        <p>Game, set e partita al meglio dei 3. Tie-break configurabile, regola del 40-40 a scelta: vantaggi, punto d'oro o Star Point.</p>
+        <div class="ic">&#128266;</div>
+        <h3>Voce che annuncia tutto</h3>
+        <p>"30 a 15." "Game, Squadra Verde." "Tie-break." "Cambio campo." L'app parla in italiano, inglese o spagnolo &mdash; tu giochi e basta.</p>
       </div>
       <div class="feat reveal d1">
+        <div class="ic">&#127918;</div>
+        <h3>Telecomando Bluetooth</h3>
+        <p>Un pulsante grande come una moneta agganciato ai pantaloncini: un click segna, doppio click annulla. Nessuna app extra.</p>
+      </div>
+      <div class="feat reveal d2">
+        <div class="ic">15</div>
+        <h3>Regole complete del padel</h3>
+        <p>Game, set e partita al meglio di 3 o 5. Tie-break configurabile, regola del 40-40 a scelta: vantaggi, punto d'oro o Star Point.</p>
+      </div>
+      <div class="feat reveal">
         <div class="ic">&#8646;</div>
         <h3>Cambio campo automatico</h3>
-        <p>I lati si scambiano sullo schermo quando la regola lo impone, cos&igrave; il punteggio segue sempre la squadra sulla tua met&agrave;.</p>
+        <p>I lati si scambiano sullo schermo quando la regola lo impone, con annuncio vocale. Il punteggio segue sempre la squadra sulla tua met&agrave;.</p>
+      </div>
+      <div class="feat reveal d1">
+        <div class="ic">&#9201;</div>
+        <h3>Timer di fine partita</h3>
+        <p>Imposti l'ora di fine e l'app ti avvisa a voce quando il tempo sta per scadere. Utile con i campi a prenotazione oraria.</p>
       </div>
       <div class="feat reveal d2">
         <div class="ic">&#9788;</div>
         <h3>Leggibile al sole</h3>
-        <p>Quattro combinazioni di colori, inclusa una ad alto contrasto. Nomi delle squadre personalizzabili.</p>
+        <p>Quattro combinazioni di colori, inclusa una ad alto contrasto. Nomi delle squadre personalizzabili. Funziona tutto offline.</p>
       </div>
     </div>
     <div class="shots">
-      <button class="shot reveal" data-full="img/app-1.jpg"><img src="img/app-1.jpg" alt="Schermata SegnaPadel: partita in corso"></button>
-      <button class="shot reveal d1" data-full="img/app-2.jpg"><img src="img/app-2.jpg" alt="Schermata SegnaPadel: set point"></button>
-      <button class="shot reveal d2" data-full="img/app-3.jpg"><img src="img/app-3.jpg" alt="Schermata SegnaPadel: cambio campo"></button>
-      <button class="shot reveal d3" data-full="img/app-4.jpg"><img src="img/app-4.jpg" alt="Schermata SegnaPadel: fine partita"></button>
+      <button class="shot reveal" data-full="img/app-1.jpg"><img src="img/app-1.jpg" alt="Schermata PadelCue: scelta di chi serve per primo"></button>
+      <button class="shot reveal d1" data-full="img/app-2.jpg"><img src="img/app-2.jpg" alt="Schermata PadelCue: partita in corso, 40-30"></button>
+      <button class="shot reveal d2" data-full="img/app-3.jpg"><img src="img/app-3.jpg" alt="Schermata PadelCue: match point"></button>
+      <button class="shot reveal d3" data-full="img/app-4.jpg"><img src="img/app-4.jpg" alt="Schermata PadelCue: combinazione colori ad alto contrasto"></button>
     </div>
     <p class="shots-hint reveal">Tocca uno screenshot per ingrandirlo.</p>
   </div>
 </section>
 
-<section class="sec-ink" id="premium">
+<section class="sec-ink" id="pro">
   <div class="wrap">
-    <div class="eyebrow reveal">SegnaPadel Premium</div>
-    <h2 class="reveal d1">Qui l'app smette di essere un tabellone<br>e diventa il quarto giocatore</h2>
-    <p class="sec-lead reveal d2">Tre funzioni che cambiano come si gioca una partita. Non &egrave; comodit&agrave; in pi&ugrave;: &egrave; <strong>non doversi mai fermare</strong> per il punteggio.</p>
+    <div class="eyebrow reveal">PadelCue Pro &middot; 2,99&nbsp;&euro; una tantum</div>
+    <h2 class="reveal d1">L'app che si ricorda<br>come hai giocato</h2>
+    <p class="sec-lead reveal d2">Tutto il punteggio &egrave; gratis. Con <strong>Pro</strong> l'app diventa anche il tuo diario: ogni partita salvata, le statistiche nel tempo, il punteggio al polso. Un acquisto unico, nessun abbonamento.</p>
 
     <div style="margin-top:44px">
       <div class="pcard reveal">
         <div class="n">01</div>
         <div>
-          <h3>Voce che annuncia tutto</h3>
-          <div class="sub">"30 a 15." "Game, Squadra Verde." "Tie-break." "Cambio campo." L'app parla, tu giochi e basta.</div>
-          <span class="why">Perch&eacute; cambia tutto</span>
-          <div class="whytext">&Egrave; come avere un arbitro in sedia. Nessuno deve ricordare il punteggio, nessuno lo discute, nessuno si distrae a contare tra un punto e l'altro.</div>
+          <h3>Storico partite</h3>
+          <div class="sub">Ogni partita finita si salva da sola: risultato, durata, avversari. Rivedi l'elenco, apri le statistiche di ognuna, esporta tutto quando vuoi.</div>
+          <span class="why">Perch&eacute; conta</span>
+          <div class="whytext">Vinte, perse, percentuale di game vinti, testa a testa contro ogni coppia, andamento delle ultime partite. La tua stagione, in una schermata.</div>
         </div>
       </div>
       <div class="pcard reveal">
         <div class="n">02</div>
         <div>
-          <h3>Telecomando Bluetooth</h3>
-          <div class="sub">Un pulsante grande come una moneta, agganciato a maglia o pantaloncini. Un click segna il punto, doppio click annulla.</div>
-          <span class="why">Perch&eacute; cambia tutto</span>
-          <div class="whytext">Segni nell'istante in cui lo scambio finisce, dal punto in cui sei. Niente pi&ugrave; corse alla rete, niente "aspetta che segno", niente ritmo spezzato.</div>
+          <h3>Statistiche di fine partita</h3>
+          <div class="sub">Punti vinti e persi, punti alla battuta, break fatti e subiti, serie pi&ugrave; lunga, parit&agrave; giocate, durata media dei set.</div>
+          <span class="why">Perch&eacute; conta</span>
+          <div class="whytext">Numeri veri appena finisci di giocare, senza appunti n&eacute; fogli di calcolo. Capisci dove hai vinto la partita e dove l'hai rischiata.</div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -260,16 +276,29 @@
         <div>
           <h3>Punteggio sullo smartwatch Wear OS</h3>
           <div class="sub">Il punteggio in tempo reale al polso, con i comandi per segnare e annullare direttamente dall'orologio.</div>
-          <span class="why">Perch&eacute; cambia tutto</span>
+          <span class="why">Perch&eacute; conta</span>
           <div class="whytext">Controlli e aggiorni il punteggio senza nemmeno un telefono in campo. Lo tieni d'occhio mentre servi, mentre cammini, sempre.</div>
         </div>
       </div>
     </div>
 
-    <p class="sec-lead reveal" style="margin-top:36px">Insieme, queste tre cose trasformano il telefono appeso alla rete in un vero <strong>segnapunti da torneo</strong> &mdash; che gioca con te, non ti interrompe.</p>
-    <div class="cta-row reveal" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px">
+    <div class="split rev" style="margin-top:56px">
+      <div class="txt reveal d1">
+        <h3 style="font-size:1.5rem;font-weight:900;margin-bottom:10px">La memoria delle tue partite</h3>
+        <p class="sec-lead">Lo storico vive <strong>sul tuo telefono</strong>: nessun account, nessun server, incluso nel backup di sistema Android. Nella versione gratis rivedi le ultime 5 partite; con Pro sono illimitate.</p>
+        <ul>
+          <li>Elenco di tutte le partite, pi&ugrave; recenti in alto</li>
+          <li>Statistiche complete di ogni partita</li>
+          <li>Aggregati: % vittorie, andamento, testa a testa</li>
+          <li>Esporta lo storico come file, quando vuoi</li>
+        </ul>
+      </div>
+      <img class="reveal" src="img/storico-lista.jpg" alt="Schermata PadelCue: storico delle partite con risultati, durata e avversari" onerror="this.closest('.split').classList.add('split--noimg');this.remove()">
+    </div>
+
+    <div class="cta-row reveal" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:40px">
       <a class="btn" href="#kit">Prendi il Kit da Campo</a>
-      <a class="btn btn--ghost" href="#unlock">Come sbloccare il Premium</a>
+      <a class="btn btn--ghost" href="#unlock">Come sbloccare il Pro</a>
     </div>
   </div>
 </section>
@@ -280,7 +309,7 @@
     <h2 class="reveal d1">Lo tieni addosso, lo dimentichi</h2>
     <div class="split rev">
       <div class="txt reveal d1">
-        <p class="sec-lead">Nel Kit da Campo ne trovi <strong>due, uno per squadra</strong>, con una clip stampata in 3D che si mette su maglietta o pantaloncini. Si abbina in pochi secondi, nessuna app extra.</p>
+        <p class="sec-lead">Il telecomando &egrave; una <strong>funzione gratuita</strong> dell'app. Nel Kit da Campo trovi i <strong>due pulsanti fisici</strong> gi&agrave; pronti, uno per squadra, con una clip stampata in 3D per maglietta o pantaloncini. Si abbina in pochi secondi.</p>
         <ul>
           <li>Un click = punto alla tua squadra</li>
           <li>Doppio click = annulla l'ultimo punto</li>
@@ -296,25 +325,25 @@
 <section class="sec-ink" id="kit">
   <div class="wrap">
     <div class="eyebrow reveal">Kit da Campo</div>
-    <h2 class="reveal d1">Tutto il Premium, pronto per il campo</h2>
+    <h2 class="reveal d1">L'hardware pronto + Pro, in una scatola</h2>
     <div class="kit reveal d1">
       <div>
-        <span class="tag">Kit da Campo SegnaPadel</span>
-        <h2>Supporto + 2 telecomandi + Premium</h2>
+        <span class="tag">Kit da Campo PadelCue</span>
+        <h2>Supporto + 2 telecomandi + Pro</h2>
         <ul>
           <li><strong>Supporto per il telefono</strong> stampato in 3D, si aggancia alla rete metallica del campo</li>
-          <li><strong>2 telecomandi Bluetooth</strong> con clip 3D, uno per squadra</li>
-          <li><strong>SegnaPadel Premium</strong> incluso &mdash; voce, telecomando e smartwatch, tramite un codice da riscattare su Google Play</li>
+          <li><strong>2 telecomandi Bluetooth</strong> con clip 3D, uno per squadra &mdash; i pulsanti fisici per la funzione telecomando (gratuita) dell'app</li>
+          <li><strong>PadelCue Pro</strong> incluso &mdash; storico partite, statistiche e smartwatch, tramite un codice da riscattare su Google Play</li>
         </ul>
         <div class="price">
           <span class="num">49,90&nbsp;&euro;</span>
           <span class="per">una tantum &middot; spedizione in Italia</span>
         </div>
-        <a class="btn" href="mailto:app@kerastoneitalia.com?subject=Prenotazione%20Kit%20da%20Campo%20SegnaPadel">Prenota il tuo Kit</a>
+        <a class="btn" href="mailto:app@kerastoneitalia.com?subject=Prenotazione%20Kit%20da%20Campo%20PadelCue">Prenota il tuo Kit</a>
         <p class="fine">Disponibilit&agrave; limitata alla prima produzione. Ti scriviamo appena il Kit &egrave; pronto per la spedizione, senza impegno.</p>
       </div>
       <div class="kit-photo">
-        <img src="img/supporto-campo.jpg" alt="Supporto SegnaPadel con il telefono agganciato alla rete del campo">
+        <img src="img/supporto-campo.jpg" alt="Supporto PadelCue con il telefono agganciato alla rete del campo">
       </div>
     </div>
   </div>
@@ -322,7 +351,7 @@
 
 <section class="sec-paper" id="unlock">
   <div class="wrap">
-    <div class="eyebrow reveal">Come sbloccare il Premium</div>
+    <div class="eyebrow reveal">Come sbloccare il Pro</div>
     <h2 class="reveal d1">Due strade, stesso risultato</h2>
     <div class="unlock">
       <div class="u reveal">
@@ -333,7 +362,7 @@
       <div class="u reveal d1">
         <div class="p">Incluso</div>
         <h3>Nel Kit da Campo</h3>
-        <p>Compri il Kit (supporto + 2 telecomandi) e il Premium arriva con un codice da riscattare sul Play Store.</p>
+        <p>Compri il Kit (supporto + 2 telecomandi) e il Pro arriva con un codice da riscattare sul Play Store.</p>
       </div>
     </div>
   </div>
@@ -346,15 +375,19 @@
     <div class="faq reveal d1">
       <details>
         <summary>L'app gratuita cosa include?</summary>
-        <p>Tutto il punteggio: regole complete del padel, tie-break, regola del 40-40, cambio campo automatico, nomi e colori delle squadre, ripresa della partita. Senza pubblicit&agrave;. A pagamento sono solo voce, telecomando e smartwatch.</p>
+        <p>Quasi tutto: regole complete del padel, tie-break, regola del 40-40, cambio campo automatico, <strong>voce che annuncia il punteggio</strong>, <strong>telecomando Bluetooth</strong>, timer di fine partita, nomi e colori delle squadre, ripresa della partita. Senza pubblicit&agrave;. Con Pro aggiungi storico partite, statistiche di fine partita e punteggio sullo smartwatch.</p>
       </details>
       <details>
-        <summary>Il Premium &egrave; un abbonamento?</summary>
+        <summary>Il Pro &egrave; un abbonamento?</summary>
         <p>No. &Egrave; un acquisto unico da 2,99&nbsp;&euro;, legato al tuo account Google: lo paghi una volta e resta sbloccato per sempre, anche se cambi telefono.</p>
       </details>
       <details>
-        <summary>Come funziona il codice Premium del Kit?</summary>
-        <p>Con il Kit ricevi un codice promozionale di Google Play. Lo riscatti dal Play Store e SegnaPadel Premium si sblocca sul tuo account.</p>
+        <summary>Lo storico delle partite dove viene salvato?</summary>
+        <p>Solo <strong>sul tuo telefono</strong>. Nessun account, nessun server: l'app non manda i tuoi dati da nessuna parte. Su Android lo storico rientra nel backup di sistema, quindi si ripristina su un nuovo telefono. Puoi anche esportarlo come file quando vuoi.</p>
+      </details>
+      <details>
+        <summary>Come funziona il codice Pro del Kit?</summary>
+        <p>Con il Kit ricevi un codice promozionale di Google Play. Lo riscatti dal Play Store e PadelCue Pro si sblocca sul tuo account.</p>
       </details>
       <details>
         <summary>Il supporto va bene per tutti i campi?</summary>
@@ -362,7 +395,7 @@
       </details>
       <details>
         <summary>Serve internet per usare l'app in campo?</summary>
-        <p>No. L'app funziona completamente offline. La connessione serve solo per l'acquisto del Premium.</p>
+        <p>No. L'app funziona completamente offline. La connessione serve solo per l'acquisto del Pro.</p>
       </details>
     </div>
   </div>
@@ -373,7 +406,7 @@
     <div class="foot-brand">
       <a class="logo" href="#top" style="margin-bottom:14px">
         <svg viewBox="0 0 1024 1024" aria-hidden="true"><rect width="1024" height="1024" fill="#062017"/><circle cx="512" cy="524" r="338" fill="#EAFF3D"/><path d="M 262 470 C 404 372 470 706 560 726 C 644 744 726 700 766 646" fill="none" stroke="#062017" stroke-width="42" stroke-linecap="round"/></svg>
-        Segna<b style="color:var(--signal)">Padel</b>
+        Padel<b style="color:var(--signal)">Cue</b>
       </a>
       <p>Il segnapunti da campo per il padel. Un progetto di Filippo Bonanno &mdash; Kerastone Italia.</p>
     </div>
@@ -381,8 +414,8 @@
       <div>
         <h4>Prodotto</h4>
         <ul>
-          <li><a href="#gratis">L'app gratuita</a></li>
-          <li><a href="#premium">Premium</a></li>
+          <li><a href="#gratis">L'app gratis</a></li>
+          <li><a href="#pro">Pro</a></li>
           <li><a href="#kit">Kit da Campo</a></li>
         </ul>
       </div>
